@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    font-size: 32px;
+}
+
+
+body{
+    margin : 0;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.container {
+    position: relative; /* header 내의 절대 위치로 지정 */
+    top: -30px; /* 시계의 바로 위에 위치하도록 설정 */
+    width: 100%;
+    transform: translateY(50%);
+    display: flex;
+    z-index: 1;
+
+}
+
+.button1, .button2 {
+    background-color: black;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    margin-top:0px;
+    border : 2px solid ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s; /* 호버 시에 변형 효과 추가 */
+    transform: translateY(50%);
+}
+
+.button1:hover, .button2:hover {
+    transform: translateY(0); /* 호버 시에 버튼을 아래로 이동하여 완전히 보이도록 함 */
+}
+
+
+.clock{
+    position: relative;
+    background-color: white;
+    min-width: 400px;
+    min-height: 230px;
+    margin: 0 auto;
+    border : 10px solid black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.today{
+    padding-top: 20px;
+    padding-left: 20px; 
+    margin-right: auto; 
+    
+}
+
+
+.time{
+    font-size: 90px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 150px; 
+}
+
+.stopwatchDisplay{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.bnt{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.startStopButton, .resetButton {
+    position: relative;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 90px;
+    height: 50px;
+    border-radius: 20%;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+.startStopButton:hover, .resetButton:hover{
+    cursor: pointer;
+    opacity: 0.2;
+}

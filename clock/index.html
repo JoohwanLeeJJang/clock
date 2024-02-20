@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <button class="button1" id="button1">
+                clock
+            </button>
+            <button class="button2" id="button2">
+                stop watch
+            </button>
+         </div>
+        <div class="clock" id="clock">
+            <div class ="today" id = "today"></div>
+            <div class="time" id = "time"></div>
+        </div>
+        <div class="clock" id="stopwatch" style="display: none;">
+            <div class="stopwatchDisplay" id="stopwatchDisplay">00:00:00</div>
+            <div class="bnt">
+                <button class="startStopButton" id="startStopButton">Start</button>
+                <button class="resetButton" id="resetButton">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src ="script.js"></script>
+</body>
+</html>
